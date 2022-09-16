@@ -1,53 +1,22 @@
-# Vite + ReactJS + TS + TailwindCSS Template Project
+# Control ESP32 from anywhere in the World - ESP32 Control Panel - ReactJS Web App
 
-React Application Template.
+This repository has been created as a part of the YouTube video:
+[Control ESP32 from ANYWHERE in the World - Step-By-Step Tutorial](https://youtu.be/z53MkVFOnIo)
 
-## Features
-
-- Zero-config: Works out of the box without the need to install any other compiler or plugins
-- Supports ES2015 syntax + features (`export`, `import`, `async`, `await`, `Promise`, ...)
-- Supports TailwindCSS class names
-
-## Prerequisites
-
-- [`node.js`](https://nodejs.org)
+This is ReactJS Application to control ESP32 from the browser through AWS API Gateway WebSockets Server.
 
 ## Installation
 
-Clone the repository to a directory with a name of your choice f.e. your-project-name:
+Run:
 
-```
-git clone git@github.com:ttarnowski/vite-react-ts-tailwind-template.git your-project-name
-```
-
-Change directory to the newly created project:
-
-```
-cd your_project_name
-```
-
-Open `package.json` and change this line:
-
-```
-"name": "vite-react-ts-tailwindcss-template",
-```
-
-To:
-
-```
-"name": "your-project-name",
-```
-
-And run:
-
-```
+```bash
 npm install
 ```
 
-or:
+or
 
 ```
-yarn
+yarn install
 ```
 
 ## Usage
