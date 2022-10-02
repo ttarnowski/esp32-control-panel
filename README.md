@@ -33,6 +33,41 @@ or:
 yarn dev
 ```
 
+## Creating Infrastructure
+
+Run:
+
+```
+npm run create-infrastructure
+```
+
+or:
+
+```
+yarn create-infrastructure
+```
+
+If get following error message:
+
+```
+An error occurred (BucketAlreadyExists) when calling the CreateBucket operation: The requested bucket name is not available. The bucket namespace is shared by all users of the system. Please select a different name and try again.
+```
+
+It means the bucket name you're trying to use is already taken.
+To use different bucket name run:
+
+```
+git reset --hard
+```
+
+And:
+
+```
+npm run create-infrastructure
+```
+
+again but provide different bucket name when prompted.
+
 ## Licence
 
 MIT.

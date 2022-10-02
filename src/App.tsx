@@ -13,7 +13,7 @@ const defultOutputPin = outputPins[0];
 
 function App() {
   const { lastMessage, sendMessage, readyState } = useWebSocket(
-    "wss://jd7pu22nvl.execute-api.eu-west-2.amazonaws.com/dev"
+    "wss://YOUR_API_GW_ID.execute-api.eu-west-2.amazonaws.com/dev"
   );
   const [selectedPin, setSelectedPin] = useState(defultOutputPin);
   const [pinValue, setPinValue] = useState(false);
@@ -88,8 +88,10 @@ function App() {
           }}
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         >
-          {outputPins.map((pin) => (
-            <option value={pin}>GPIO{pin}</option>
+          {outputPins.map((pin, key) => (
+            <option key={key} value={pin}>
+              GPIO{pin}
+            </option>
           ))}
         </select>
       </div>
